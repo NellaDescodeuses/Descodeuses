@@ -1,0 +1,11 @@
+.container{
+  padding: 30px;
+}
+form{
+  width: 450px;
+  background: lightgrey;
+  border: 30px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px black;
+  padding: 1em;
+}
