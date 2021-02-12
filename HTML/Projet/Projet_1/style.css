@@ -12,6 +12,7 @@ h2{
 body{
   background: url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/Images_projet1/fond_jaune.png");
   font-family: sans-serif;
+  margin: auto;
 }
 #bloc_page{
   width: 60%; /* défini la largeur*/
@@ -54,6 +55,10 @@ nav ul{
 }
 nav li{
   margin-right:10px; /*espace entre les mots*/
+}
+nav a:hover{/* permet de spécifier l'apparence d'un élément au moment où l'utilisateur le survole avec le pointeur*/
+  color: #760001;
+  border-bottom: 3px solid #760001;
 }
 #banniere_image{
   margin-top: 15px;
@@ -117,39 +122,49 @@ aside h2{
   text-align: center;
 }
 #photo_zozor{
-  border-style: solid;
-  border-color: black;
+  border: 1px black solid;
 }
 footer{
   display: flex;
-  background: url(/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/Images_projet1/ico_top.png) no-repeat,
+  background: url(/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/Images_projet1/ico_top.png) no-repeat top center,
               url(/home/nella/Bureau/Exercice/HTML/Projet/Projet_1/Images_projet1/separateur.png) repeat-x top; /*répète l'image sur toute la ligne du haut*/
 }
 .container{
-  text-transform: uppercase; /* lettres en majuscules*/
   font-size: smaller;
   color: grey;
   display: flex;
   flex-wrap: nowrap;
 }
+.container h2{
+  text-transform: uppercase; /* lettres en majuscules*/
+  font-size: 0.9em;
+}
 #tweet{
   float: left;
+  width: 40%;
 }
 .photos{
   display: flex;
   flex-direction: column;
   float:left;
-
+}
+#photos{
+  display: flex;
+  width: 30%;
+}
+#photos img{
+  margin-left: 5px;
 }
 #liste_amis{
   display: flex;
   flex-direction: column;
   float: right;
-  padding-left: 75px;
+  width: 30%;
+  margin-left: 100px;
 }
 #liste_amis ul{
   display: flex;
-  flex-wrap: nowrap;
+  padding-left: 17px;
 }
 #amis1, #amis2{
   list-style-type: none; /* enlève les puces*/
@@ -160,4 +175,5 @@ footer{
 }
 #amis2{
   float: right;
+  margin-left: 50px;
 }
