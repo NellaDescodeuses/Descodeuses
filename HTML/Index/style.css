@@ -1,8 +1,16 @@
-container{
-  width: 50%;
-  }
+body{
+  text-align: center;
+  background-color: lightgrey /* ajoute un fond*/
+}
+h1, h2{
+  color: #60FFE9;
+  text-shadow: 2px 2px 2px black; /*ajoute un contour*/
+}
+.container{
+  width: 100%;
+}
 form{
-  width: 7%;
+  width: 10%;
   background: lightgrey;
   border: 30px;
   border-radius: 8px;
@@ -10,12 +18,7 @@ form{
   padding: 1em;
   margin: auto;
 }
-body{
-  text-align: center;
-}
-h2{
-  color: red;
-}
-p{
-  color: pink;
+form a{
+  text-decoration: none;
+  color: black;
 }
