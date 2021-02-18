@@ -36,15 +36,15 @@ button{
 .gauche h2{
   font-size: 1.5em;
   margin-top: 13%;
+  color: #4D3650;
 }
 .bas{
   background-color: lightgrey;
-  display: flex;
-  justify-content: space-around;
+  display: inherit;
 }
 .bas img{
   width: 15%;
-  display:
+  margin-left: 12%;
 }
 nav{
   margin-top: 18%;
@@ -60,7 +60,7 @@ nav img{
   float: right;
 }
 nav a{
-
+  color: #4D3650;
 }
 nav li{
   font-family: 'Spirax', cursive;
@@ -147,7 +147,19 @@ button{
   display: flex;
   justify-content: center;
   text-decoration: none;
+  color: white;
 }
 #contact a:hover{
   color: white;
+}
+.top{
+  margin-top: -6%;
+  margin-right: 5%;
+  float: right;
+  height:25px; /*taille du bouton*/
+  padding: 3px 8px 0px 8px;/*marges intérieures*/
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  background: linear-gradient(black, #863545, #421526, black);/* fond couleur dégradé*/
 }
