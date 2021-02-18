@@ -46,6 +46,9 @@ button{
   width: 15%;
   margin-left: 12%;
 }
+.bas a:hover{
+  color:#4D3650;
+}
 nav{
   margin-top: 18%;
 }
