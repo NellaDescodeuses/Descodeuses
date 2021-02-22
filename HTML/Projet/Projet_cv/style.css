@@ -10,6 +10,8 @@ html {
   src: url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_cv/Polices_cv/Gupter/Gupter-Regular.ttf");
 }
 body{
+  background-image: url("/home/nella/Bureau/Exercice/HTML/Projet/Projet_cv/Image_cv/fond_bienvenue.jpg");
+  background-size: cover;
   display: flex;
   margin: 0%;
   color: white;
@@ -155,6 +157,7 @@ button{
 #contact a:hover{
   color: white;
 }
+/*bouton retour haut de page*/
 .top{
   margin-top: -6%;
   margin-right: 5%;
@@ -165,4 +168,102 @@ button{
   border-radius: 5px;
   text-decoration: none;
   background: linear-gradient(black, #863545, #421526, black);/* fond couleur dégradé*/
+}
+/*page d'acceuil du CV*/
+.bienvenue{
+  font-family: 'Spirax', cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.bienvenue a{
+  color: white;
+  font-size: 75px;
+  text-decoration: none;
+}
+/*animation de la page d'accueil*/
+.bienvenue a:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  margin-top: -11%;
+  margin-left: 15%;
+}
+.bienvenue a:hover:before{
+  animation: animate-border 1s linear forwards;
+}
+@keyframes animate-border{
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: #4D3650;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: #4D3650;
+    border-right-color: #4D3650;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #fcfcfc;
+    border-right-color: #fcfcfc;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+.bienvenue a:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  margin-left: -15%;
+  margin-top: 11%;
+}
+.bienvenue a:hover:after{
+  animation: animate-border-2 1s linear forwards;
+  animation-delay: 1s;
+}
+@keyframes animate-border-2{
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #4D3650;
+  }
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #4D3650;
+    border-left-color: #4D3650;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #fcfcfc;
+    border-left-color: #fcfcfc;
+  }
 }
